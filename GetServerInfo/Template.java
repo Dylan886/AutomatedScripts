@@ -97,7 +97,7 @@ public class Template {
         Document doc=reader.read(file);
         //获取根元素
         Element root=doc.getRootElement();
-        //获取所有的子元素Love
+        //获取所有的子元素
         List<Element> list = root.elements("sysInfo");
         //输入name元素的内容
         for (Element element : list) {
