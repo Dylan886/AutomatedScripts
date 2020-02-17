@@ -98,9 +98,9 @@ public class Template {
         //获取根元素
         Element root=doc.getRootElement();
         //获取所有的子元素Love
-        List<Element> lovelist = root.elements("sysInfo");
+        List<Element> list = root.elements("sysInfo");
         //输入name元素的内容
-        for (Element element : lovelist) {
+        for (Element element : list) {
             System.out.println(element.elementTextTrim("name"));
             System.out.println(element.elementTextTrim("version"));
             System.out.println("---------------");
