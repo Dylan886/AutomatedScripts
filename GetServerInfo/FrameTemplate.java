@@ -49,10 +49,10 @@ public class frame extends JFrame{
 	private void setButtonAction() {
 		ActionListener sendListener = new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
-				String content = JTextField.getText();
+				String content = jTextField.getText();
 				if((content.trim()).length() != 0) {
 
-				JTextField.setText("");		
+				jTextField.setText("");		
 				System.out.println(content);
 				}else {
 					System.out.println("不能设置为空");
